@@ -17,3 +17,7 @@ Route::get('/users', function (Request $request) {
 ## POST ##
 
 Route::post('/registration/email', [EmailController::class, 'sendRegistrationEmail']);
+
+Route::post('/unregistration/email', [EmailController::class, 'sendUnregistrationEmail']);
+
+Route::post('/checkin/email', [EmailController::class, 'sendCheckinEmail']);
